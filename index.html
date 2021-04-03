@@ -46,11 +46,22 @@ function draw_canvas (){
 	emptyCanvas_context.fillRect(30,30,40,40);
 }
 	
-// this function write my name on the canvas and the exact location of where my name will be added on the canvas
+// this function writes my name on the canvas and the exact location of where my name will be added on the canvas
 function write_my_name() {
 	var emptyCanvas_canvas = document.getElementById("emptyCanvas");
 	var emptyCanvas_context = emptyCanvas_canvas.getContext("2d");
 	emptyCanvas_context.fillText("Anirudh Sudarshan",40,20);  }
+	
+	
+// this function creates a rectangle for the canvas with the size of (40,40,20,20)
+function rectangle_draw() {
+	var emptyCanvas_canvas = document.getElementById("emptyCanvas");
+	var emptyCanvas_context = emptyCanvas_canvas.getContext("2d");
+	a_context.fillRect(40,40,20,20); }
+	
+	
+	
+	
 	</script> 
 
 <style>	
@@ -85,6 +96,9 @@ function write_my_name() {
 	
 	<!-- creates a button to write my name on the canvas that calls back write_my_name function--> 
   	 <button onclick = "write_my_name();">Draw my name!</button>
+	
+	<!-- creates a button to draw a rectangle on the canvas that calls back rectangle_draw function--> 
+  	 <button onclick = "rectangle_draw();">Draw a rectangle!</button>
 	
 	<p>Try this canvas tool!</p>
 		
