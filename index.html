@@ -60,7 +60,12 @@ function rectangle_draw() {
 	emptyCanvas_context.fillRect(40,40,20,20); }
 	
 	
-	
+// function that clears the canvas
+function clear_board() {
+	var emptyCanvas_canvas = document.getElementById("emptyCanvas");
+	var emptyCanvas_context = emptyCanvas_canvas.getContext("2d");
+	emptyCanvas_context.clearRect(0,0,emptyCanvas.width,emptyCanvas.height); }
+		
 	
 	</script> 
 
@@ -99,6 +104,9 @@ function rectangle_draw() {
 	
 	<!-- creates a button to draw a rectangle on the canvas that calls back rectangle_draw function--> 
   	 <button onclick = "rectangle_draw();">Draw a rectangle!</button>
+	
+	<!-- creates a button to clear the the canvas that calls back clear_board function--> 
+  	 <button onclick = "clear_board();">Clear the canvas!</button>
 	
 	<p>Try this canvas tool!</p>
 		
