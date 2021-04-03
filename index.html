@@ -72,10 +72,10 @@ function add_picture() {
 	var emptyCanvas_context = emptyCanvas_canvas.getContext("2d");
 	var marioImage = new Image();
 	marioImage.src = "images/mario.png";
+	marioImage.onload = function () {
+	emptyCanvas_context.drawImage(marioImage, 200,20);}
 }	
-	
-marioImage.onload = function () {
-	emptyCanvas_context.drawImage(marioImage, 150,50);}
+
 	</script> 
 
 <style>	
